@@ -1,0 +1,177 @@
+.plan-details-container {
+  min-height: calc(100vh - 56px);
+  background-color: #f8f9fa;
+}
+
+.plan-detail-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.plan-detail-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.plan-detail-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.plan-price-tag {
+  text-align: right;
+}
+
+.base-label {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.price {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.plan-detail-body {
+  padding: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.feature-box {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #007bff;
+}
+
+.feature-box i {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.feature-box strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.feature-box p {
+  margin: 0;
+  color: #666;
+}
+
+.action-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  padding: 30px;
+  top: 20px;
+}
+
+.premium-result {
+  animation: slideIn 0.5s ease;
+}
+
+.premium-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.premium-badge .label {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.premium-badge .amount {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.premium-badge .period {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.premium-breakdown {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.breakdown-item:last-child {
+  border-bottom: none;
+}
+
+.modal-content {
+  border-radius: 20px;
+  border: none;
+}
+
+.modal-header {
+  border-radius: 20px 20px 0 0;
+  border: none;
+}
+
+.btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .plan-detail-header {
+    text-align: center;
+  }
+  
+  .plan-detail-header h1 {
+    font-size: 2rem;
+  }
+  
+  .plan-price-tag {
+    text-align: center;
+    width: 100%;
+  }
+}

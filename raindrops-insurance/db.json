@@ -1,0 +1,50 @@
+{
+  "plans": [
+    {
+      "planId": 1,
+      "planName": "Care Life Plan",
+      "description": "The Care Life Plan safeguards you from unforeseen circumstances by providing instant coverage with no waiting period. Emergency services such as immediate ambulance, specialist consultation and complete assistance are its major features.",
+      "baseAmt": 2500,
+      "validity": 15
+    },
+    {
+      "planId": 2,
+      "planName": "Good Health Plan",
+      "description": "The Good Health Plan is our best selling plan. Facilities like Air Ambulance and Buy Now and Pay Later options make it a stand out in the industry.",
+      "baseAmt": 2500,
+      "validity": 30
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "name": "Justin",
+      "city": "Chennai",
+      "phone": "2780808989",
+      "email": "hello@gmail.com",
+      "age": "35",
+      "planId": 2,
+      "planName": "Good Health Plan",
+      "validity": 30,
+      "paymentMode": "credit card",
+      "cardNumber": "7890-3223-7778",
+      "premiumAmt": 2500,
+      "paymentFreq": "yearly"
+    },
+    {
+      "id": 2,
+      "name": "Ravi Kumar",
+      "city": "Faridabad",
+      "phone": "+919899999990",
+      "email": "test@gmail.com",
+      "age": 22,
+      "planId": 1,
+      "planName": "Care Life Plan",
+      "validity": "2023-12-11",
+      "paymentMode": "Credit Card",
+      "cardNumber": "1110-1212-2394",
+      "premiumAmt": 2500,
+      "paymentFreq": "Half Yearly"
+    }
+  ]
+}
