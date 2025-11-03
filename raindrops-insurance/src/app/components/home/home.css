@@ -1,64 +1,87 @@
 .home-container {
   min-height: calc(100vh - 56px);
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Hero Section */
 .hero-section {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(120deg, #5dade2 0%, #7b68ee 100%);
   color: white;
+  padding: 100px 0;
+  overflow: hidden;
+  position: relative;
 }
 
-.hero-section h1 {
-  animation: fadeInUp 1s;
+.hero-section::before {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: white;
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
 }
 
-.hero-section .lead {
-  animation: fadeInUp 1.2s;
+.hero-section .highlight {
+  color: #ffe082;
 }
 
-.hero-section .btn {
-  animation: fadeInUp 1.4s;
+.hero-img {
+  max-width: 100%;
+  border-radius: 20px;
+
 }
 
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Features Section */
 .features-section {
-  background-color: #f8f9fa;
+  background-color: #f9fbfd;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #2c3e50;
 }
 
 .feature-card {
   background: white;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
 
 .feature-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
 .icon-circle {
-  width: 80px;
-  height: 80px;
-  background: #e7f3ff;
+  width: 90px;
+  height: 90px;
+  background: #eaf3ff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  transition: background 0.3s;
 }
 
+.feature-card:hover .icon-circle {
+  background: #d6e6ff;
+}
+
+/* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  background: linear-gradient(135deg, #7b68ee 0%, #5dade2 100%);
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
 }

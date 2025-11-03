@@ -1,51 +1,57 @@
 <div class="home-container">
   <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container">
+  <section class="hero-section d-flex align-items-center">
+    <div class="container text-center text-lg-start">
       <div class="row align-items-center">
-        <div class="col-lg-6">
-          <h1 class="display-3 fw-bold mb-4">Protect Your Future with <span class="text-primary">Raindrops Insurance</span></h1>
-          <p class="lead mb-4">Comprehensive health insurance plans tailored to your needs. Get instant coverage with no waiting period.</p>
-          <button class="btn btn-primary btn-lg me-3" routerLink="/plans">View Plans</button>
-          <button class="btn btn-outline-primary btn-lg" routerLink="/about">Learn More</button>
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="display-4 fw-bold mb-3">
+            Secure Your Tomorrow with <span class="highlight">Raindrops Insurance</span>
+          </h1>
+          <p class="lead mb-4">
+            Protect your loved ones with our flexible and affordable insurance plans.
+          </p>
+          <div>
+            <button class="btn btn-light btn-lg me-3" routerLink="/plans">  View Plans</button>
+            <button class="btn btn-outline-light btn-lg" routerLink="/about">Learn More</button>
+          </div>
         </div>
-        <div class="col-lg-6">
-          <img src="assets/insurance-hero.svg" alt="Insurance" class="img-fluid" onerror="this.style.display='none'">
+        <div class="col-lg-6 text-center">
+          <img src="insurance-hero.jpg" alt="Insurance" class="hero-img img-fluid rounded-4 shadow-lg">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features Section -->
+  <!-- Features Section -->     
   <section class="features-section py-5">
     <div class="container">
-      <h2 class="text-center mb-5">Why Choose Us?</h2>
+      <h2 class="section-title text-center mb-5">Why Choose Us?</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="feature-card text-center p-4">
             <div class="icon-circle mb-3">
-              <i class="bi bi-shield-check fs-1 text-primary"></i>
+              <i class="bi bi-droplet-half fs-1 text-primary"></i>
             </div>
-            <h4>Instant Coverage</h4>
-            <p>No waiting period. Get covered immediately after purchase.</p>
+            <h4 class="fw-semibold mb-2">Instant Protection</h4>
+            <p>Get insured in minutes with zero waiting time — seamless and fast!</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="feature-card text-center p-4">
             <div class="icon-circle mb-3">
-              <i class="bi bi-wallet2 fs-1 text-primary"></i>
+              <i class="bi bi-cash-coin fs-1 text-primary"></i>
             </div>
-            <h4>Affordable Plans</h4>
-            <p>Flexible payment options with competitive premium rates.</p>
+            <h4 class="fw-semibold mb-2">Budget-Friendly</h4>
+            <p>Customizable plans designed to fit your lifestyle and pocket.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="feature-card text-center p-4">
             <div class="icon-circle mb-3">
-              <i class="bi bi-headset fs-1 text-primary"></i>
+              <i class="bi bi-chat-dots-fill fs-1 text-primary"></i>
             </div>
-            <h4>24/7 Support</h4>
-            <p>Round-the-clock customer support for all your needs.</p>
+            <h4 class="fw-semibold mb-2">24/7 Assistance</h4>
+            <p>Our support team is always available to help — anytime, anywhere.</p>
           </div>
         </div>
       </div>
@@ -53,11 +59,11 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="cta-section py-5 bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">Ready to Get Started?</h2>
-      <p class="lead mb-4">Join thousands of satisfied customers who trust Raindrops Insurance</p>
-      <button class="btn btn-light btn-lg" routerLink="/plans">Explore Plans Now</button>
+  <section class="cta-section text-white text-center py-5">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Take the First Step Toward Protection</h2>
+      <p class="lead mb-4">Join thousands who trust Raindrops Insurance for peace of mind.</p>
+      <button class="btn btn-light btn-lg px-5" routerLink="/plans">Explore Plans</button>
     </div>
   </section>
 </div>
